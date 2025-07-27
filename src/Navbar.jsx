@@ -7,7 +7,9 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">PERO TRAVEL</div>
+    <div className="joka">
+        <div className="logo"></div>
+    </div>
 <div className="xato">
         <ul className={open ? "nav-links open" : "nav-links"}>
         <li><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>

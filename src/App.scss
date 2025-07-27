@@ -16,7 +16,11 @@
   gap: 100px;
 
 }
-
+.ulo{
+  display: flex;
+  justify-content: center;
+  left: 100px;
+}
 .katta{
   display: flex;
   justify-content: center;
@@ -26,8 +30,7 @@
   background-color: #aaa;
   border-radius: 10px;
   padding: 10px;
-  margin-left: 600px;
-  margin-top: 50px;
+  
   position: absolute;
 }
 .rr{
@@ -188,7 +191,7 @@
 height: 100px;
   padding: 30px;
   margin-bottom: 30px;
-      background-image: url('./3.jpg');
+      background-image: url('./5.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       border-radius: 20px;
@@ -213,13 +216,10 @@ height: 100px;
 height: 450px;
  display: flex;
  justify-content: flex-end;
-text-shadow:
-  0 0 5px red,
-  0 0 10px rgb(0, 0, 0),
-  0 0 15px rgb(255, 255, 255);
+
         .type {
           font-size: 0.9rem;
-          color: #ccc;
+          color: #ffffff;
         }
 
         h3 {
@@ -236,7 +236,7 @@ text-shadow:
 
         .desc {
           font-size: 0.9rem;
-          color: #aaa;
+          color: #ffffff;
           margin-bottom: 1rem;
         }
 
@@ -255,6 +255,7 @@ text-shadow:
       }
     }
   }
+
 }
 .uzim{
 
@@ -429,8 +430,7 @@ background-color: #1e88e5;
 
   top: 50%;
   left: 50%;
-  transform: translate(330%, 80%); // markazga to‘g‘rilaydi
-
+  transform: translate(330%, 80%); 
   @media (max-width: 768px) {
     width: 180px;
     height: 180px;
@@ -473,7 +473,7 @@ background-color: #1e88e5;
 
   top: 50%;
   left: 50%;
-  transform: translate(110%, 80%); // markazga to‘g‘rilaydi
+  transform: translate(110%, 80%); 
 
   @media (max-width: 768px) {
     width: 180px;
@@ -652,10 +652,18 @@ height: -250px;
 
   color: rgb(0, 0, 0);
 
-
+.joka{
+  width: 100px;
+  height: 100px;
+}
   .logo {
     font-weight: bold;
-    font-size: 1.5rem;
+
+    background-image: url('./221.png');
+    width: 100px;
+    position: absolute;
+    height: 100px;
+  
   }
 .yozuvlar{
   display: flex;
@@ -1554,11 +1562,11 @@ display: flex;
 }
 
 .popular-slider .slick-slide {
-  padding-right: 20px; /* Divlar orasidagi bo‘shliq */
+  padding-right: 20px; 
 }
 
 .popular-slider .slick-list {
-  margin-right: -20px; /* Oxirgi kartochkada joy bo‘lmasin */
+  margin-right: -20px; 
 }
 
 .tour-card {
@@ -2229,360 +2237,105 @@ gap: 25px;
     }
   }
 }
-@media (max-width: 768px) {
-  .excursions {
-    padding: 15px;
-
-    .uzim {
-      text-align: center;
-
-      .www1,
-      .www {
-        font-size: 1.5rem;
-      }
-    }
-
-    .hero {
-      text-align: center;
-
-      .ty {
-        font-size: 1.4rem;
-        padding: 10px 0;
-      }
-    }
-
-    .search-panel {
-      flex-direction: column;
-      align-items: center;
-
-      .filters {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 10px;
-
-        select,
-        input,
-        .show-btn {
-          width: 100%;
-        }
-      }
-
-      .category-tabs {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-
-        a {
-          font-size: 1rem;
-          padding: 8px 12px;
-        }
-      }
-    }
-
-    .main {
-      flex-direction: column;
-
-      .sidebar {
-        width: 100%;
-        padding: 10px;
-        border: none;
-
-        .filter-block {
-          margin-bottom: 20px;
-
-          span {
-            font-weight: bold;
-          }
-
-          input[type="number"] {
-            width: 45%;
-          }
-
-          .people-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-
-            button {
-              padding: 5px 10px;
-              font-size: 0.9rem;
-            }
-          }
-        }
-      }
-
-      .excursion-list {
-        padding: 10px;
-
-        .excursion-card {
-          flex-direction: column;
-          padding: 10px;
-          margin-bottom: 20px;
-
-          .image {
-            height: 180px;
-            background-size: cover;
-            background-position: center;
-            width: 100%;
-          }
-
-          .details {
-            padding: 10px;
-
-            .tag {
-              font-size: 0.9rem;
-            }
-
-            h2 {
-              font-size: 1.2rem;
-            }
-
-            .info {
-              flex-wrap: wrap;
-              gap: 8px;
-              font-size: 0.95rem;
-            }
-
-            p {
-              font-size: 1rem;
-            }
-
-            .details-btn {
-              width: 100%;
-              padding: 10px;
-              font-size: 1rem;
-            }
-          }
-        }
-      }
-    }
-
-    .oxirgi {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-
-      .img12 {
-        width: 100%;
-        height: auto;
-      }
-
-      .yob {
-        padding: 15px;
-
-        .pol {
-          flex-direction: column;
-          gap: 20px;
-
-          .bir,
-          .iki,
-          .uch {
-            p {
-              font-size: 0.95rem;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .tt {
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 20px;
-
-    .p {
-      text-align: center;
-
-      h1 {
-        font-size: 1.5rem;
-
-        .ee {
-          display: block;
-        }
-      }
-
-      .ff {
-        width: 100%;
-        padding: 10px;
-      }
-    }
-
-    .kol {
-      display: none; // yoki flex-wrap: wrap agar rasm kereli bo‘lsa
-    }
+    height: auto;
   }
 
-  .popular-section {
+  .p h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .ee {
+    font-size: 20px;
+    display: inline;
+    color: #f2c02c;
+    font-style: italic;
+    font-family: cursive;
+  }
+
+  .ff {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .kol {
+    display: none; // Mobilda rasmli blok yashiriladi yoki kichraytiriladi
+  }
+
+  .popular-slider .tour-card {
     padding: 10px;
-
-    .popular-header {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-
-      h2 {
-        font-size: 1.4rem;
-      }
-
-      a {
-        font-size: 1rem;
-      }
-    }
-
-    .popular-slider {
-      .tour-card {
-        flex-direction: column;
-        padding: 10px;
-        text-align: center;
-
-        img {
-          width: 100%;
-          height: auto;
-        }
-
-        .text {
-          padding: 10px;
-
-          .type {
-            font-size: 0.9rem;
-          }
-
-          h3 {
-            font-size: 1.1rem;
-          }
-
-          .info {
-            font-size: 0.9rem;
-            margin: 8px 0;
-          }
-
-          .desc {
-            font-size: 1rem;
-          }
-
-          button {
-            width: 100%;
-            padding: 8px;
-          }
-        }
-      }
-    }
   }
 
   .katta {
-    font-size: 0.95rem;
-    padding: 15px;
-    line-height: 1.6;
-    text-align: justify;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
   }
 
   .div2 {
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     padding: 10px;
+  }
 
-    .uu,
-    .bb {
-      flex-direction: column;
-      gap: 15px;
+  .uu, .bb {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-      .ff1,
-      .ff2,
-      .ff3 {
-        padding: 10px;
+  .ff1, .ff2, .ff3 {
+    padding: 10px;
+    text-align: left;
+  }
 
-        p.rr {
-          font-size: 1.1rem;
-          text-align: center;
-        }
-
-        .div-rasm,
-        .div-rasm1,
-        .div-rasm2,
-        .div-rasm3 {
-          width: 100%;
-          height: 180px;
-          background-size: cover;
-          background-position: center;
-        }
-      }
-    }
+  .rr {
+    font-size: 22px;
+    text-align: center;
   }
 
   .div_button-block {
-    text-align: center;
-
-    button {
-      width: 100%;
-      padding: 12px;
-      font-size: 1rem;
-    }
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
   }
 
   .gallery {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
-
-    .box {
-      height: 120px;
-    }
+    padding: 10px;
   }
 
   .footer {
     padding: 20px;
+    font-size: 14px;
+  }
 
-    .questions {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-
-      .questions_inputs {
-        flex-direction: column;
-        gap: 10px;
-
-        input {
-          width: 100%;
-        }
-      }
-
-      button {
-        width: 100%;
-        padding: 10px;
-      }
-    }
+  .questions_inputs input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
   }
 
   .oxirgi {
-    flex-direction: column;
-    text-align: center;
-    padding: 15px;
-
-    .img12 {
-      display: none; // yoki width: 100% agar kerak bo‘lsa
-    }
-
-    .yob {
-      .pol {
-        flex-direction: column;
-        gap: 20px;
-
-        .bir,
-        .iki,
-        .uch {
-          p {
-            font-size: 0.95rem;
-          }
-        }
-      }
-    }
+    padding: 10px;
+    font-size: 14px;
   }
 
-  .rr,
-  .tr {
+  .yob {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bir, .iki, .uch {
     text-align: center;
-    font-size: 1.5rem;
   }
 }
+

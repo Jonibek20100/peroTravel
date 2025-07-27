@@ -24,7 +24,7 @@ function Home() {
 
   return (
     <>
-      {/* HERO */}
+  
       
       <div className="tt">
         <div className="p">
@@ -92,7 +92,8 @@ function Home() {
       </section> <br /> <br /> <br /> <br /> <br />
 
      
-<div className="katta">
+<div className="ulo">
+  <div className="katta">
 О нас <br /> <br />
 PeroTravel - Первый онлайн-сервис по бронированию  <br />
 экскурсий без очередей и операторов. Lorem ipsum dolor <br />
@@ -106,6 +107,7 @@ Sed ut perspiciatis unde omnis iste natus error <br />
   totam rem aperiam, eaque ipsa quae ab illo inventore <br />
   veritatis et quasi architecto beatae vitae dicta sunt explicabo. <br />
        
+</div>
 </div>
 
     <div className="qisim3">
