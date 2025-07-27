@@ -7,9 +7,9 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-    <div className="joka">
-        <div className="logo"></div>
-    </div>
+        <div className="logo">
+<a href="https://pero-travel-clone.netlify.app/" className="joka"></a>
+        </div>
 <div className="xato">
         <ul className={open ? "nav-links open" : "nav-links"}>
         <li><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>
@@ -20,6 +20,7 @@ function Navbar() {
       <div className="menu-icon" onClick={() => setOpen(!open)}>
         <FaBars />
       </div>
+      
     </nav>
   );
 }

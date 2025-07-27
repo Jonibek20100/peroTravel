@@ -19,7 +19,7 @@
 .ulo{
   display: flex;
   justify-content: center;
-  left: 100px;
+
 }
 .katta{
   display: flex;
@@ -486,6 +486,11 @@ background-color: #1e88e5;
   border: none;
   border-radius: 15px;
   background-color: #007bff;
+  transition: 0.3s;
+  .hover{
+    color: white;
+    background-color: #f9a825   ;
+  }
 }
 .p{
   display: flex;
@@ -651,20 +656,25 @@ height: -250px;
   padding: 1rem 2rem;
 
   color: rgb(0, 0, 0);
+  .logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end flex-start;
+    padding-top: 35px;
+width: 100px;
+height: 100px;
 
-.joka{
-  width: 100px;
-  height: 100px;
-}
-  .logo {
-    font-weight: bold;
-
-    background-image: url('./221.png');
-    width: 100px;
-    position: absolute;
-    height: 100px;
-  
   }
+.joka{
+
+width: 55px;
+height: 80px;
+background-image: url('./221.png');
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
 .yozuvlar{
   display: flex;
   justify-content: flex-start;
