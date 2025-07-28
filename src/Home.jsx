@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import emailjs from 'emailjs-com';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,6 +22,29 @@ function Home() {
       { breakpoint: 600, settings: { slidesToShow: 1 } },
     ],
   };
+
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    'service_51pxxe4',     // EmailJS’da o‘z service ID’ingiz
+    'template_69evx9r',    // EmailJS’da template ID
+    e.target,
+    'KOuurIT8S5oRMXtNm'      // EmailJS public key
+  ).then(
+    (result) => {
+      console.log(result.text);
+      alert("Заявка отправлена!");
+    },
+    (error) => {
+      console.log(error.text);
+      alert("Произошла ошибка!");
+    }
+  );
+
+  e.target.reset(); // formani tozalash
+};
 
   return (
     <>
@@ -192,20 +216,21 @@ Sed ut perspiciatis unde omnis iste natus error <br />
 
     </div> <br /> <br /> <br /> <br />
 
-      <footer className="footer">
-        <div className="questions">
-          <div className="questions_text">
-            <h2>Остались вопросы?</h2>
-            <p>Оставь заявку и мы ответим</p>
-          </div>
-          <div className="questions_inputs">
-            <input type="text" value={"имя"} />
-            <input type="text" value={"телефон"} />
-            <input type="text" value={"почта"} />
-          </div>
-          <button>Оставить заявку</button>
-        </div>
-      </footer> <br /> <br /> <br /> <br />
+<footer className="footer">
+  <div className="questions">
+    <div className="questions_text">
+      <h2>Остались вопросы?</h2>
+      <p>Оставь заявку и мы ответим</p>
+    </div>
+    <form className="questions_inputs" onSubmit={sendEmail}>
+      <input type="text" name="user_name" placeholder="Имя" required />
+      <input type="tel" name="user_phone" placeholder="Телефон" required />
+      <input type="email" name="user_email" placeholder="Почта" required />
+      <button type="submit">Оставить заявку</button>
+    </form>
+  </div>
+</footer>
+ <br /> <br /> <br /> <br />
 <div className="oxirgi">
   <div className="img12">
 
