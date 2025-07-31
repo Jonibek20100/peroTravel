@@ -513,7 +513,9 @@ background-color: #1e88e5;
   display: flex;
   align-items: flex-end;   
   justify-content: center; 
-  gap: 8px;
+height: 750px;
+width: 45%;
+gap: 8px;
 }
 
 .img1 {
@@ -523,7 +525,10 @@ background-color: #1e88e5;
   width: 250px;
   height: 250px;
   border-radius: 10px;
-
+  @media (max-width: 768px) {
+    width: 180px;
+    height: 180px;
+  }
 }
 .img2 {
   background-image: url('./rr.webp');
@@ -535,7 +540,10 @@ background-color: #1e88e5;
   border-radius: 10px;
 
 
-
+  @media (max-width: 768px) {
+    width: 180px;
+    height: 180px;
+  }
 }
 .ff{
   padding: 10px;
