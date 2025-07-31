@@ -6,24 +6,26 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="navbar">
-        <div className="logo">
-<div className="joka"></div>
-        </div>
-<div className="xato">
-        <ul className={open ? "nav-links open" : "nav-links"}>
-        <li><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>
-        <li><Link to="/tours" onClick={() => setOpen(false)}>Tours</Link></li>
-        <li><Link to="/contact" onClick={() => setOpen(false)}>Contact</Link></li>
-      
-      </ul>
+    <>
+      <nav className="navbar">
 
-</div>
-      <div className="menu-icon" onClick={() => setOpen(!open)}>
-        <FaBars />
-      </div>
-      
-    </nav>
+        <div className="xato">
+          <div>
+            <div className="joka"></div>
+
+          </div>
+            <ul className={open ? "nav-links open" : "nav-links"}>
+              <li><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>
+              
+              <li><Link to="/tours" onClick={() => setOpen(false)}>Tours</Link></li>
+              <li><Link to="/contact" onClick={() => setOpen(false)}>Contact</Link></li>
+            </ul>
+        </div>
+
+
+      </nav>
+
+    </>
   );
 }
 

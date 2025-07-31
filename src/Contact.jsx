@@ -81,7 +81,7 @@ const GoldenRing = () => {
  <p> 📲 Телеграм-бот PeroTravel</p>
 </div>
 <div className="uch">
-   <p>📧 office@perotravel.ru</p>
+   <p>📧 jonibekistam07@gmail.com</p>
 </div>
 </div>
   </div>

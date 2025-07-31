@@ -6,8 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-import img1 from "./350.jpg";
-import img2 from "./66.jpg";
+// import img1 from "./350.jpg";
+// import img2 from "./66.jpg";
 
 function Home() {
   const settings = {
@@ -48,8 +48,6 @@ const sendEmail = (e) => {
 
   return (
     <>
-  
-      
       <div className="tt">
       <section className="hero">
         <div className="overlay">
@@ -59,18 +57,14 @@ const sendEmail = (e) => {
 
           <a href="#excursions" className="hero-btn">К экскурсиям →</a>
         </div>
-              <div className="admin">
-        <div className="img15"></div>
-        <div className="img16"></div>
-        <div className="img17"></div>
-      </div>
+
       </section>
         <div className="kol">
           <div className="img"></div>
           <div className="img1"></div>
           <div className="img2"></div>
         </div>
-      </div> <br /> <br />  <br />  <br /> <br /> <br />  <br />  <br /> <br /> <br />  <br />  <br /> <br /> <br />  <br />  <br /> <br /> <br />  <br />  <br /> <br /> <br />  <br />  <br /> <br /> <br />  <br />  <br /> <br /> <br />  <br />  <br /> <br /> <br />  <br />  <br /> <br /> <br />  <br />  <br /> <br />
+      </div> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> <br />
 
 
       <section className="popular-section">
@@ -254,7 +248,7 @@ Sed ut perspiciatis unde omnis iste natus error <br />
  <p> 📲 Телеграм-бот PeroTravel</p>
 </div>
 <div className="uch">
-   <p>📧 office@perotravel.ru</p>
+   <p>📧 jonibekistam07@gmail.com</p>
 </div>
 </div>
   </div>
