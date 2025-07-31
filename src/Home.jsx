@@ -28,10 +28,10 @@ const sendEmail = (e) => {
   e.preventDefault();
 
   emailjs.sendForm(
-    'service_51pxxe4',     // EmailJS’da o‘z service ID’ingiz
-    'template_69evx9r',    // EmailJS’da template ID
+    'service_51pxxe4',     
+    'template_69evx9rnpm',  
     e.target,
-    'KOuurIT8S5oRMXtNm'      // EmailJS public key
+    'KOuurIT8S5oRMXtNm'      
   ).then(
     (result) => {
       console.log(result.text);
@@ -43,7 +43,7 @@ const sendEmail = (e) => {
     }
   );
 
-  e.target.reset(); // formani tozalash
+  e.target.reset(); 
 };
 
   return (
@@ -51,14 +51,20 @@ const sendEmail = (e) => {
   
       
       <div className="tt">
-        <div className="p">
-          <h1>
-            ПУТЕШЕСТВУЙ <p className="ee">вместе </p> PERO TRAVEL
-          </h1>
-          <br />
-          <br />
-          <button className="ff">К экскурсиям</button>
+      <section className="hero">
+        <div className="overlay">
+          <h1 className="top-text">ПУТЕШЕСТВУЙ</h1>
+          <p className="middle-text">вместе с</p>
+          <h1 className="bottom-text">PERO TRAVEL</h1>
+
+          <a href="#excursions" className="hero-btn">К экскурсиям →</a>
         </div>
+              <div className="admin">
+        <div className="img15"></div>
+        <div className="img16"></div>
+        <div className="img17"></div>
+      </div>
+      </section>
         <div className="kol">
           <div className="img"></div>
           <div className="img1"></div>

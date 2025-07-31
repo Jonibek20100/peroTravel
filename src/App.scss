@@ -3,11 +3,91 @@
   padding: 0;
   box-sizing: border-box;
 }
+.hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+width: 680px;
+  .overlay {
+    color: white;
+    text-align: center;
+
+    .top-text {
+      font-size: 40px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .middle-text {
+      font-size: 40px;
+      color: #ffb200;   
+      font-style: italic;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .bottom-text {
+      font-size: 80px;
+      font-weight: 1000;
+      color: transparent;
+      -webkit-text-stroke: 2px white;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+
+    .hero-btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 16px 35px;
+      font-size: 18px;
+      font-weight: 600;
+      background: #00cbe6;
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: 0.3s;
+
+      &:hover {
+        background: #009eb3;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    .overlay {
+      .top-text {
+        font-size: 45px;
+      }
+
+      .middle-text {
+        font-size: 26px;
+      }
+
+      .bottom-text {
+        font-size: 50px;
+        -webkit-text-stroke: 1px white;
+      }
+
+      .hero-btn {
+        font-size: 16px;
+        padding: 12px 25px;
+      }
+    }
+  }
+}
+
 .tt{
  position: absolute;
   height: 80vh;
   color: white;
   display: flex;
+  justify-content: center;
 
 }
 .div2{
@@ -401,8 +481,6 @@ background-color: #1e88e5;
     }
   }
 }
-
-
 @media (max-width: 900px) {
   .excursions {
     flex-direction: column;
@@ -425,23 +503,17 @@ background-color: #1e88e5;
   background-size: cover;
   width: 250px;
   height: 250px;
-  position: absolute;
   border-radius: 10px;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(330%, 80%); 
   @media (max-width: 768px) {
     width: 180px;
     height: 180px;
   }
 }
 .kol{
-  width: 100%;
-  height: 100vh;
-  
-
-
+  display: flex;
+  align-items: flex-end;   
+  justify-content: center; 
+  gap: 8px;
 }
 
 .img1 {
@@ -450,17 +522,8 @@ background-color: #1e88e5;
   background-size: cover;
   width: 250px;
   height: 250px;
-  position: absolute;
   border-radius: 10px;
 
-  top: 50%;
-  left: 50%;
-  transform: translate(220%, 80%); 
-
-  @media (max-width: 768px) {
-    width: 180px;
-    height: 180px;
-  }
 }
 .img2 {
   background-image: url('./rr.webp');
@@ -468,17 +531,11 @@ background-color: #1e88e5;
   background-size: cover;
   width: 250px;
   height: 250px;
-  position: absolute;
+
   border-radius: 10px;
 
-  top: 50%;
-  left: 50%;
-  transform: translate(110%, 80%); 
 
-  @media (max-width: 768px) {
-    width: 180px;
-    height: 180px;
-  }
+
 }
 .ff{
   padding: 10px;
@@ -641,6 +698,7 @@ height: 0px;
 
 }
 .navbar {
+
 background-image: url('./50.jpg');
 filter: brightness(70%);
 background-repeat: no-repeat;
@@ -665,15 +723,18 @@ width: 100px;
 height: 100px;
 
   }
+  
 .joka{
-
-width: 55px;
-height: 80px;
-background-image: url('./221.png');
-background-repeat: no-repeat;
-background-size: cover;
-
-
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 50px;
+  height: 70px;
+  background-image: url('./1.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
 }
 .yozuvlar{
   display: flex;
@@ -706,28 +767,28 @@ background-size: cover;
   
 display: flex;
 }
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .menu-icon {
       display: block;
     }
 
     .nav-links {
       position: absolute;
-      top: 70px;
+      top: 100%;
       right: 0;
-      background: #333;
+      background-color: #fff;
+      width: 100%;
       flex-direction: column;
-      gap: 1rem;
-      padding: 1rem;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 0;
       display: none;
-
-      &.open {
-        display: flex;
-      }
+      transition: all 0.3s ease;
     }
   }
 }
 
+  
 .home, .tours, .contact {
   padding: 2rem;
   text-align: center;
@@ -2078,7 +2139,7 @@ gap: 25px;
 .route-right {
   flex: 1 1 400px;
   min-height: 550px;
-  background-image: url('./6.png'); // Rasm joyi shu yerda
+  background-image: url('./6.png'); 
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -2274,9 +2335,7 @@ gap: 25px;
     font-size: 16px;
   }
 
-  .kol {
-    display: none; // Mobilda rasmli blok yashiriladi yoki kichraytiriladi
-  }
+
 
   .popular-slider .tour-card {
     padding: 10px;

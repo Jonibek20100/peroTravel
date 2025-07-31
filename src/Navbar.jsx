@@ -8,14 +8,16 @@ function Navbar() {
   return (
     <nav className="navbar">
         <div className="logo">
-<a href="https://pero-travel-clone.netlify.app/" className="joka"></a>
+<div className="joka"></div>
         </div>
 <div className="xato">
         <ul className={open ? "nav-links open" : "nav-links"}>
         <li><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>
         <li><Link to="/tours" onClick={() => setOpen(false)}>Tours</Link></li>
         <li><Link to="/contact" onClick={() => setOpen(false)}>Contact</Link></li>
+      
       </ul>
+
 </div>
       <div className="menu-icon" onClick={() => setOpen(!open)}>
         <FaBars />
