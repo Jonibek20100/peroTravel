@@ -16,7 +16,6 @@ function Navbar() {
           </div>
             <ul className={open ? "nav-links open" : "nav-links"}>
               <li><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>
-              
               <li><Link to="/tours" onClick={() => setOpen(false)}>Tours</Link></li>
               <li><Link to="/contact" onClick={() => setOpen(false)}>Contact</Link></li>
             </ul>

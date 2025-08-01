@@ -59,12 +59,12 @@ const sendEmail = (e) => {
         </div>
 
       </section>
-        <div className="kol">
-          <div className="img"></div>
-          <div className="img1"></div>
-          <div className="img2"></div>
-        </div>
-      </div> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> <br />
+      </div> 
+          <div className="kol">
+            <div className="img"></div>
+            <div className="img1"></div>
+            <div className="img2"></div>
+          </div>
 
 
       <section className="popular-section">
@@ -113,11 +113,14 @@ const sendEmail = (e) => {
             </div>
           </div>
         </Slider>
-      </section> <br /> <br /> <br /> <br /> <br />
+      </section> 
 
      
+
+<div className="goo">
+      <div className="qisim3">
 <div className="ulo">
-  <div className="katta">
+
 О нас <br /> <br />
 PeroTravel - Первый онлайн-сервис по бронированию  <br />
 экскурсий без очередей и операторов. Lorem ipsum dolor <br />
@@ -130,13 +133,10 @@ Sed ut perspiciatis unde omnis iste natus error <br />
  sit voluptatem accusantium doloremque laudantium,<br />
   totam rem aperiam, eaque ipsa quae ab illo inventore <br />
   veritatis et quasi architecto beatae vitae dicta sunt explicabo. <br />
-       
-</div>
-</div>
 
-    <div className="qisim3">
-      
-    </div> <br /> <br /> <br /> <br />
+</div>
+    </div> 
+</div>
 
 
    <br /> <br /> <br />
