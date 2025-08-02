@@ -543,14 +543,14 @@
       }
     }
   }
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
     .excursions {
       flex-direction: column;
     }
     .card {
       flex-direction: column !important;
       img {
-        width: 100% !important;
+        width: 200% !important;
         height: 200px;
       }
     }
@@ -564,6 +564,10 @@
     position: relative;
     bottom: -500px;
     left: 850px;
+    @media   (max-width: 768px){
+      width: 100px;
+      margin-left: -450px;
+    }
     .img {
     display: inline-block;
     margin: 10px;
@@ -1944,9 +1948,10 @@
   }
   @media (max-width: 768px) {
     .navbar {
+      width: 850px;
       flex-direction: column;
       align-items: flex-start;
-      padding: 10px 20px;
+    
       gap: 10px;
 
       .logo {
@@ -1955,7 +1960,7 @@
 
       .nav-links {
         position:  relative;
-        left: -50px;
+        left: -250px;
         flex-direction: column;
         width: 100%;
         gap: 15px;
@@ -1988,8 +1993,8 @@
       }
 
       .popular-slider {
+        display: flex;
         flex-direction: column;
-        gap: 20px;
 
         .card {
           width: 100%;
@@ -2359,10 +2364,11 @@
   }
   @media screen and (max-width: 768px) {
     .tt {
+      width: 500px;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 20px;
+      
       height: auto;
     }
 
@@ -2456,4 +2462,141 @@
       text-align: center;
     }
   }
+@media (max-width: 858px) {
+  .excursions {
+    width: 80px;
+  }
+
+  .uzim {
+    text-align: center;
+    .www1,
+    .www {
+      font-size: 24px;
+    }
+  }
+
+  .hero {
+    text-align: center;
+    .ty {
+      font-size: 20px;
+    }
+  }
+
+  .search-panel {
+    flex-direction: column;
+    gap: 10px;
+   width: 540px;
+    .filters {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      select,
+      input[type='date'],
+      .show-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
+
+    .category-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      a {
+        font-size: 14px;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .main {
+    flex-direction: column;
+   width: 500px;
+    .sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+      h3 {
+        font-size: 18px;
+      }
+
+      .filter-block {
+        margin-bottom: 15px;
+        input[type="number"] {
+          width: 45%;
+        }
+
+        .people-buttons {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5px;
+          button {
+            padding: 6px 10px;
+            font-size: 12px;
+          }
+        }
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .excursion-list {
+      .excursion-card {
+        flex-direction: column;
+        .image {
+          width: 100%;
+          height: 180px;
+          background-color: #ddd;
+        }
+        .details {
+          padding: 10px;
+          h2 {
+            font-size: 16px;
+          }
+          .info {
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+          }
+          p {
+            font-size: 13px;
+          }
+          .details-btn {
+            padding: 8px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .oxirgi {
+    .img12 {
+      display: none;
+    }
+    .yob {
+      padding: 10px;
+      .pol {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .bir, .iki, .uch {
+          p {
+            font-size: 14px;
+            margin: 3px 0;
+          }
+        }
+      }
+    }
+  }
+}
 
