@@ -1,18 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
-
 function Navbar() {
   const [open, setOpen] = useState(false);
-
   return (
     <>
       <nav className="navbar">
-
         <div className="xato">
-          <div>
-            <div className="joka"></div>
 
+          <div className="co">
+            <div className="joka"></div>
           </div>
             <ul className={open ? "nav-links open" : "nav-links"}>
               <li><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>
@@ -20,8 +16,6 @@ function Navbar() {
               <li><Link to="/contact" onClick={() => setOpen(false)}>Contact</Link></li>
             </ul>
         </div>
-
-
       </nav>
 
     </>

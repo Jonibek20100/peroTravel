@@ -1,6 +1,5 @@
 import './App.scss';
-import React, { useRef } from "react";
-import emailjs from "emailjs-com";
+
 const GoldenRing = () => {
   return (
     <div className="golden-ring">
@@ -10,10 +9,11 @@ const GoldenRing = () => {
           <h1 className="title">ЗОЛОТОЕ КОЛЬЦО АБХАЗИИ<br />(ИЗ АДЛЕРА)</h1> <br /> <br /> <br />
           <button className="btn">К другим экскурсиям</button>
         </div>
-      </div> <br /> <br /> <br /> <br /> <br />
+      </div>
+  
       <div className='gigma'>
     <div className="tx">
-          <h2>Описание экскурсии</h2> 
+          <h2 className='joka15'>Описание экскурсии</h2> 
     </div> <br /> 
 <div className="ol">
              
@@ -24,15 +24,15 @@ const GoldenRing = () => {
 </div> 
 
 
-      </div> <br /> <br /> <br />
+      </div> 
       <div className="divlar">
         <div className="hi"><h4 className='h4'>1 618 ₽</h4><br /> <p>Взрослый билет</p></div>
         <div className="hi"><h4 className='h4'>1 412 ₽</h4> <br /> <p>Детский билет</p></div>
         <div className="hi"><h4 className='h4'>12 часов</h4></div>
-      </div> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+      </div> 
   <div className="route-wrapper">
       <div className="route-left">
-        <h2>Описание маршрута</h2>
+        <h2 className='joka15'>Описание маршрута</h2>
         <ul>
           <li>Город Гагра, Колоннада, ресторан "Гагрипш", Парк принца Ольденбургского;</li>
           <li>Смотровая площадка "Прощай Родина", "Чабгарский" карниз, Подвесной мост через реку "Бзыбь";</li>
@@ -53,8 +53,9 @@ const GoldenRing = () => {
       </div>
 
       <div className="route-right" />
-    </div> <br /> <br /> <br /> <br />
-    <div className="email-ru">
+    </div> 
+<div className="gap">
+      <div className="email-ru">
       <div className="rs"></div> 
      <div className="inbutlar">
       <h2 className='h22'>Забронировать тур</h2> 
@@ -63,7 +64,8 @@ const GoldenRing = () => {
       <input type="text" placeholder="Birthday"/>
       <button className='btn22'>Забронировать</button>
      </div>
-    </div><br /> <br /><br /> <br /> <br /> <br /> <br /> <br /> <br />
+    </div>
+    </div>
     <div className="oxirgi1">
   <div className="img12">
 
@@ -86,7 +88,7 @@ const GoldenRing = () => {
 </div>
   </div>
 </div>
-    </div>
+</div>
     
   );
 };

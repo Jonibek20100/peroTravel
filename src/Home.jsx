@@ -48,7 +48,7 @@ const sendEmail = (e) => {
 
   return (
     <>
-      <div className="tt">
+                <div className="tt">
       <section className="hero">
         <div className="overlay">
           <h1 className="top-text">ПУТЕШЕСТВУЙ</h1>
