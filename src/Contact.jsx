@@ -52,7 +52,9 @@ const GoldenRing = () => {
         </ul>
       </div>
 
-      <div className="route-right" />
+      <div className="po">
+        <div className="route-right" />
+      </div>
     </div> 
 <div className="gap">
       <div className="email-ru">

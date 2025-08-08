@@ -9,13 +9,7 @@
       justify-content: center;
     }
   }
-  .homejo{
-    padding: 50px;
-    @media (max-width: 758px  ) {
-    display: flex;
-    flex-direction: column;
-    }
-  }
+
   .xato{
     width: 1500px;
     height: 500px;
@@ -87,7 +81,7 @@
        width: 580px;
       .overlay {
         .top-text {
-          font-size: 35px;
+          font-size: 25px;
         }
 
         .middle-text {
@@ -435,6 +429,11 @@
     justify-content: center;
     left: 100px;
     top: -650px;
+    @media (max-width: 758px) {
+      .www1 p{
+        font-size: 45px;
+      }
+    }
     
 
 
@@ -463,7 +462,7 @@
     flex-wrap: wrap;
     padding: 2rem;
     gap: 2rem;
-    background: #f5f5f5;
+    
 
     .filters {
       flex: 1 1 250px;
@@ -572,8 +571,9 @@
   }
   @media (max-width: 758px) {
     .excursions {
-      width: 100%;
+      width: 150%;
       flex-direction: column;
+      background: none;
     }
     .card {
       flex-direction: column !important;
@@ -596,8 +596,9 @@
     bottom: -500px;
     left: 850px;
     @media   (max-width: 768px){
-      width: 250px;
-      margin-left: -730px;
+      width: 80%;
+     position: relative;
+     left: 5%;
     }
     .img {
     display: inline-block;
@@ -829,8 +830,9 @@ width: 100%;
     }
 
     .nav-links {
-  
-
+@media (max-width: 758px) {
+  width: 100px;
+}
   z-index: 999;
     display: flex;
       list-style: none;
@@ -1123,7 +1125,7 @@ transition: all 0.3s ease;
     width: 100%;
     height: 700px;
     @media   (max-width: 758px){
-      width: 400px;
+      width: 100%;
     }
     .questions{
       @media (max-width: 758px) {
@@ -1480,18 +1482,19 @@ transition: all 0.3s ease;
     font-family: 'Segoe UI', sans-serif;
     background: #f5f5f5;
 
-    .hero {
+    .hero11 {
       background: url('./66.jpg') center/cover no-repeat;
       width: 100%;
-@media (max-width: 750px) {
-  .hero{
-    width: 100px; 
-
+      height: 40vh;
+      text-align: center;
+@media (max-width: 758px) {
+  .hero11{
+   
   }
 }
       h1 {
         color: white;
-        font-size: 48px;
+        font-size: 25px;
         margin: 0;
       }
     }
@@ -1662,9 +1665,9 @@ transition: all 0.3s ease;
       }
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 758px) {
       .sidebar {
-        flex: 0 0 100%;
+        flex: 0 0 40%;
       }
       .excursion-card {
         flex-direction: column;
@@ -1804,10 +1807,19 @@ transition: all 0.3s ease;
   .joka15{
       padding: 90px;
   }
+  .po{
+    @media (max-width: 758px) {
+      align-items: center;
+    };
+  }
   .golden-ring {
   
 .gap{
-
+@media (max-width: 758px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 }
     height: 70vh;
     gap: 35px;
@@ -1985,7 +1997,7 @@ transition: all 0.3s ease;
   @media (max-width: 768px) {
     
     .navbar {
-      width: 420px;
+      width: 100%;
       flex-direction: column;
       align-items: flex-start;
 
@@ -1993,6 +2005,7 @@ transition: all 0.3s ease;
  
     }
     .hero {
+      
       padding: 50px 20px;
       text-align: center;
 
@@ -2043,7 +2056,8 @@ transition: all 0.3s ease;
     }
 
     .excursions {
-      padding: 30px 15px;
+      
+      align-items: center;
 
       h2 {
         font-size: 24px;
@@ -2236,11 +2250,9 @@ transition: all 0.3s ease;
 
     display: flex;
     justify-content: center;
-    gap: 200px;
+    
     @media (max-width: 758px) {
-      padding: 10px;
-      width: 100%;
-      height: 40%;
+    
       text-align: center;
     }
   }
@@ -2262,6 +2274,7 @@ transition: all 0.3s ease;
 
   @media (max-width: 768px) {
     .golden-ring {
+
       .overlay {
     
 
@@ -2345,9 +2358,10 @@ transition: all 0.3s ease;
       }
 
       .email-ru {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        width: 75%;
+        width: 80%;
         .rs{
           
           width:80%;
@@ -2386,9 +2400,9 @@ transition: all 0.3s ease;
         }
 
         .yob {
-  position: relative;
-  left: 20%;
-
+          align-items: center;
+          position: relative;
+          left: 60px;
           .pol {
             flex-direction: column;
             align-items: center;
@@ -2409,7 +2423,9 @@ transition: all 0.3s ease;
 .burger-wrapper {
   position: relative;
   z-index: 1000;
-
+@media (max-width: 758px) {
+  width: 100px;
+}
   .burger {
     width: 30px;
     height: 22px;
@@ -2585,7 +2601,7 @@ transition: all 0.3s ease;
     }
 
     .yob {
-   width: 650%;
+   align-items: center;
     }
 
     .bir, .iki, .uch {
@@ -2714,7 +2730,8 @@ transition: all 0.3s ease;
       display: none;
     }
     .yob {
-      padding: 10px;
+      align-items: center;
+
       .pol {
         display: flex;
         flex-direction: column;

@@ -56,7 +56,7 @@ const sendEmail = (e) => {
           <p className="middle-text">вместе с</p>
           <h1 className="bottom-text">PERO TRAVEL</h1>
 
-          <a href="#excursions" className="hero-btn">К экскурсиям →</a>
+
         </div>
 
       </section>

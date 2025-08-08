@@ -5,10 +5,10 @@
     return (
       <div className="excursions">
         <div className="uzim">
-      <p className='www1'>Ваши</p>  <br />   <p className='www'>  экскурсии</p>  <br /> <br /> 
+      <p className='www1'>Ваши</p>  <br />   <p className='www'>  экскурсии</p>  
         </div>
 
-        <header className="hero">
+        <header className="hero11">
           <h1 className='ty'>НАШИ ЭКСКУРСИИ</h1>  
         </header> <br /> <br /> <br /> <br />
 
