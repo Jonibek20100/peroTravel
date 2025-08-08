@@ -70,7 +70,7 @@ const sendEmail = (e) => {
 
       <section className="popular-section">
         <div className="popular-header">
-          <h2>Популярные экскурсии</h2>
+         
           <a href="#">Смотреть все</a>
         </div>
 

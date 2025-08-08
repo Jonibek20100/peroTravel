@@ -80,7 +80,7 @@
               </div>
             ))}
           </section>
-        </div><br /> <br /> <br /> <br />
+        </div>
         <div className="oxirgi"> 
     <div className="img12">
 

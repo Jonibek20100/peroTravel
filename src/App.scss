@@ -81,7 +81,7 @@
        width: 580px;
       .overlay {
         .top-text {
-          font-size: 25px;
+          font-size: 30px;
         }
 
         .middle-text {
@@ -89,7 +89,7 @@
         }
 
         .bottom-text {
-          font-size: 35px;
+          font-size: 45px;
           -webkit-text-stroke: 1px white;
         }
 
@@ -569,20 +569,7 @@
       }
     }
   }
-  @media (max-width: 758px) {
-    .excursions {
-      width: 150%;
-      flex-direction: column;
-      background: none;
-    }
-    .card {
-      flex-direction: column !important;
-      img {
-        width: 100% !important;
-        height: 200px;
-      }
-    }
-  }
+
 
   .ee{
     color: #ffc700;
@@ -1129,7 +1116,7 @@ transition: all 0.3s ease;
     }
     .questions{
       @media (max-width: 758px) {
-        width: 250px;
+        width: 300px;
         padding: 10px ;
       }
     }
@@ -1272,7 +1259,7 @@ transition: all 0.3s ease;
   .excursions {
     font-family: 'Segoe UI', sans-serif;
     color: #000;
-    background: #f5f5f5;
+
 
     .hero {
     
@@ -1287,13 +1274,7 @@ transition: all 0.3s ease;
     }
 
     .search-panel {
-      background: white;
-      padding: 25px;
-      margin: -40px auto 20px;
-      width: 90%;
-      max-width: 1200px;
-      border-radius: 20px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
  @media (max-width: 758px) {
 .search-panel{
   width: 150%;
@@ -1479,8 +1460,7 @@ transition: all 0.3s ease;
     }
   }
   .excursions {
-    font-family: 'Segoe UI', sans-serif;
-    background: #f5f5f5;
+
 
     .hero11 {
       background: url('./66.jpg') center/cover no-repeat;
@@ -1503,7 +1483,7 @@ transition: all 0.3s ease;
       background: white;
       padding: 20px;
       margin: -40px auto 20px;
-      width: 150%;
+      width: 90%;
       max-width: 2550px;
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -1658,10 +1638,10 @@ transition: all 0.3s ease;
       }
     }
 
-    @media (max-width: 1280px) {
+    @media (max-width: 758px) {
       .main {
         flex-direction: column;
-        width: 183%;
+        width: 140%;
       }
     }
 
@@ -2610,7 +2590,7 @@ transition: all 0.3s ease;
   }
 @media (max-width: 758px) {
   .excursions {
-    width: 80%;
+    align-items: center;
   }
 
   .uzim {
