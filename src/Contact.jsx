@@ -68,13 +68,11 @@ const GoldenRing = () => {
      </div>
     </div>
     </div>
-    <div className="oxirgi1">
-  <div className="img12">
-
-  </div>
+    <div className="oxirgi11">
+  <div className="img12"></div>
   <div className="yob">
 <div className="pol">
-  <div className="bir">
+  <div className="bir ">
   <p> Главная</p>
 <p>Экскурсии</p>
 <p>Личный кабинет</p>
@@ -84,9 +82,7 @@ const GoldenRing = () => {
  <p> ☎️+7 918 919 98 28</p>
  <p> 📲 Телеграм-бот PeroTravel</p>
 </div>
-<div className="uch">
-   <p>📧 jonibekistam07@gmail.com</p>
-</div>
+
 </div>
   </div>
 </div>

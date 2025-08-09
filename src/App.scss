@@ -3,13 +3,103 @@
     padding: 0;
     box-sizing: border-box;
   }
+.menu-links {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu-links.show {
+  display: flex;
+}
+
+.oxirgi11 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  
+  color: #000000;
+
+  .img12 {
+    width: 150px;
+    height: 150px;
+    background: url('./22.png') no-repeat center/contain; 
+  }
+
+  .yob {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    .pol {
+      display: flex;
+      gap: 50px;
+
+      .bir, .iki {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  }
+}
+
+/* 📱 Telefon versiyasi */
+@media (max-width: 768px) {
+  .oxirgi11 {
+    flex-direction: column;
+    text-align: center;
+
+    .img12 {
+      margin-bottom: 15px;
+      width: 120px;
+      height: 120px;
+    }
+
+    .yob {
+      justify-content: center;
+
+      .pol {
+        flex-direction: column;
+        gap: 20px;
+
+        .bir, .iki {
+          gap: 6px;
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
   .goo{
     @media (max-width: 758px) {
       display: flex;
       justify-content: center;
     }
   }
-
+.bir{
+  gap: 100px;
+}
+.po{
+  width: 40%;
+}
   .xato{
     width: 1500px;
     height: 500px;
@@ -578,6 +668,7 @@
   .kol{
     display: flex;
     justify-content: left ;
+    gap: 15px;
     width: 450px;
     position: relative;
     bottom: -500px;
@@ -589,13 +680,14 @@
     }
     .img {
     display: inline-block;
-    margin: 10px;
+    
     background-image: url('./rr.webp');
     background-repeat: no-repeat;
     background-size: cover;
     width: 250px;
     height: 250px;
     border-radius: 10px;
+
     @media (max-width: 768px) {
       width: 180px;
       height: 180px;
@@ -606,7 +698,7 @@
   }
   .img1 {
     display: inline-block;
-    margin: 10px;
+  
     background-image: url('./66.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -818,8 +910,9 @@ width: 100%;
 
     .nav-links {
 @media (max-width: 758px) {
-  width: 100px;
+  display: none;
 }
+
   z-index: 999;
     display: flex;
       list-style: none;
@@ -1641,19 +1734,19 @@ transition: all 0.3s ease;
     @media (max-width: 758px) {
       .main {
         flex-direction: column;
-        width: 140%;
+        width: 100%;
       }
     }
 
     @media (max-width: 758px) {
       .sidebar {
-        flex: 0 0 40%;
+        
       }
       .excursion-card {
         flex-direction: column;
       }
       .image {
-        width: 100% !important;
+        width: 90% !important;
         height: 200px !important;
       }
     }
@@ -2046,7 +2139,7 @@ transition: all 0.3s ease;
       .excursion-list {
         flex-direction: column;
         gap: 20px;
-        width: 80%;
+        width: 100%;
 
         .excursion-card {
           width: 100%;
@@ -2230,7 +2323,7 @@ transition: all 0.3s ease;
 
     display: flex;
     justify-content: center;
-    
+    gap: 150px;
     @media (max-width: 758px) {
     
       text-align: center;
@@ -2246,7 +2339,7 @@ transition: all 0.3s ease;
     color: #000;
     display: flex;
     justify-content: center;
-    gap: 55px;
+    gap: 100px;
       height: 150px;
       padding: 50px;
   }
@@ -2405,6 +2498,9 @@ transition: all 0.3s ease;
   z-index: 1000;
 @media (max-width: 758px) {
   width: 100px;
+  position: absolute;
+  top: 40px;
+  left: 130%;
 }
   .burger {
     width: 30px;
@@ -2413,6 +2509,7 @@ transition: all 0.3s ease;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+    
 
     .rotate1,
     .fade,
@@ -2422,6 +2519,7 @@ transition: all 0.3s ease;
       background-color: #fff;
       border-radius: 2px;
       transition: 0.3s ease;
+      
     }
 
     &.open {
@@ -2440,6 +2538,7 @@ transition: all 0.3s ease;
   }
 
   .menu {
+    
     position: absolute;
     top: 50px;
     right: 0;
@@ -2454,7 +2553,7 @@ transition: all 0.3s ease;
       list-style: none;
 
       a {
-        color: white;
+        color: rgb(0, 0, 0);
         text-decoration: none;
         font-size: 18px;
 
@@ -2470,14 +2569,14 @@ transition: all 0.3s ease;
     }
   }
 
-  // faqat telefonlarda ko‘rsatiladi
+
   @media (max-width: 768px) {
     .burger {
       display: flex;
     }
   }
 
-  // animatsiya
+
   @keyframes fadeIn {
     from {
       opacity: 0;
