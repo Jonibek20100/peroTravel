@@ -20,7 +20,6 @@ function Navbar() {
     <div className="line"></div>
   </div>
 
-  {/* Burger ochilganda chiqadigan menyu */}
   <ul className={open ? "menu-links show" : "menu-links"}>
     <li><a href="/">Home</a></li>
     <li><a href="/tours">Tours</a></li>
