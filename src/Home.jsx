@@ -29,7 +29,7 @@ const sendEmail = (e) => {
 
   emailjs.sendForm(
     'service_51pxxe4',     
-    'template_69evx9rnpm',  
+    'template_69evx9r',  
     e.target,
     'KOuurIT8S5oRMXtNm'      
   ).then(
