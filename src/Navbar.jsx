@@ -6,7 +6,6 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="xato">
-
           <div className="co">
             <div className="joka"></div>
           </div>
